@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 5px;
+  background-color: #a3a4a6;
+  position: fixed;
+}
+
+.header img {
+max-height: 70px;
+max-width: auto;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+/*LATEST SECTION*/
+
+/*header just for this section*/
+.latest-header {
+  text-align: center;
+  background-color: #D3D3D3;
+  padding-top: 110px;
+  padding-bottom: 25px;
+}
+
+.latest-header h2 {
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 0px 0px 10px #000;
+}
+
+.latest {
+  display: flex;
+  justify-content: space-around;
+  background-color: #D3D3D3;
+  padding-bottom: 30px;
+}
+
+.latest1, .latest2 {
+  flex: 1;
+  flex-direction: column;
+  max-width: 43%;
+  vertical-align: top;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.latest1-top, .latest2-top {
+  display: flex;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+.latest1-top img, .latest2-top img {
+  max-width: 100%;
+  max-height: auto;
+  display: block;
+}
+
+.latest1-top a, .latest2-top a {
+  font-style: normal;
+  align-self: end;
+  font-size: 0.75rem;
+  padding-right: 20px;
+  color: #525456;
+}
+
+.latest1-bottom, .latest2-bottom {
+  padding: 4%;
+}
+
+
+.latest1-bottom a, .latest2-bottom a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.75rem;
+  color: #000;
+}
+
+
+.articles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 40px;
+  background-color: #545454;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.article-top {
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 10px;
+}
+
+.article-top a {
+  text-decoration: none;
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: auto;
+  align-self: flex-end;
+}
+
+.article-img {
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+
+.article-img img {
+  width: 100%;
+  height: auto;
+}
+
+.article-bottom h3 {
+  font-size: 1.8rem;
+  margin: 10px 0;
+}
+
+.article-bottom p {
+  font-size: 1.2rem;
+  color: #777;
+}
+
+
+.article h3 {
+  font-size: 1.8rem;
+  margin: 10px 0;
+}
+
+.article p {
+  font-size: 1.2rem;
+  color: #777;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+}
