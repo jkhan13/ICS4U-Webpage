@@ -63,17 +63,18 @@ max-width: auto;
 }
 
 .article-pola-top img {
-  max-height: 330px;
-  max-width: auto;
+  max-width: 100%;
+  max-height: auto;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .article-pola-top a {
+  text-decoration: none;
   font-style: normal;
   align-self: end;
   font-size: 0.75rem;
   padding-right: 20px;
-  color: #fff;
+  color: #ededed;
 }
 
 .article-pola-bottom {
@@ -82,20 +83,25 @@ max-width: auto;
   margin-bottom: 15px;
 }
 
-
+/* 
 .article-pola-bottom a {
   text-decoration: none;
   font-weight: bold;
   font-size: 24px;
   color: #ededed;
-}
+} */
 
 .article-text {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 40px;
   background-color: #fff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   max-width: 50%;
+}
+
+.article-text h1 {
+  color: #000
 }
