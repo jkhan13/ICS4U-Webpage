@@ -74,6 +74,7 @@ body, html {
 
 .grid-container {
   display: grid;
+  align-items: start;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
   gap: 5%;
@@ -84,31 +85,66 @@ body, html {
   justify-content: center;
 }
 
+.polaroid-section {
+  grid-column: span 3;
+  max-height: 100%;
+  max-width: auto;
+  align-items: center;
+}
 
-.polaroid {
+.polaroid1 {
   position: relative;
   overflow: hidden;
-  grid-column: span 3;
-  max-width: 100%;
+  max-width: 90%;
+  max-height: auto;
   height: fit-content;
-  align-items: center;
-  text-align: center; /* Centers text within the container */
+  margin-bottom: 10%;
+  text-align: center;
   background-color: white;
   border-radius: 4px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transform: scale(1);
-  transition: transform 0.2s ease;
+  transform: translateX(20px) rotate(5deg);
+    transition: transform 0.2s ease;
 }
 
-.polaroid:hover {
+.polaroid2 {
+  position: relative;
+  overflow: hidden;
+  max-width: 90%;
+  max-height: auto;
+  height: fit-content;
+  margin-bottom: 10%;
+  text-align: center;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform: translateX(-10px) rotate(-7deg);
+    transition: transform 0.2s ease;
+}
+
+.polaroid3 {
+  position: relative;
+  overflow: hidden;
+  max-width: 90%;
+  max-height: auto;
+  height: fit-content;
+  margin-bottom: 15%;
+  text-align: center;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform: translateX(30px) rotate(3deg);
+    transition: transform 0.2s ease;
+}
+
+.polaroid1:hover, .polaroid2:hover, .polaroid3:hover {
   transition: 0.2s;
   transform: scale(1.02);
 }
 
-.polaroid p {
-  /* position: absolute; */
+.polaroid1 p,.polaroid2 p,.polaroid3 p {
   top: 10%;
-  transform: rotate(-5deg);
+  transform: translateY(-15px) rotate(-9deg);
   color: #545454;
   text-decoration: none;
   font-family: "elometha";
@@ -116,20 +152,18 @@ body, html {
   font-size: 2.7vw;
   display: inline-block;
   width: 100%;
-  /* padding-bottom: 0.5vw; */
-  /* padding: 0.2em 0.5em; */
   transition: 0.2s;
 }
 
 
-.polaroid p:hover {
+.polaroid1 p:hover,.polaroid2 p:hover,.polaroid3 p:hover {
   color: #000;
   transition: 0.2s;
 }
 
-.polaroid img {
+.polaroid1 img, .polaroid2 img, .polaroid3 img {
   display: block;
-  object-fit: cover;
+  object-fit:cover;
   padding-top: 1.5vw;
   padding-right: 1.5vw;
   padding-left: 1.5vw;
@@ -144,22 +178,28 @@ body, html {
   grid-row: 1;
   display: flex;
   flex-direction: column;
-  /* align-items: stretch; */
-  /* flex: 1; */
-  /* align-items: end; */
+
 }
 
  .article-content h1 {
   font-family: "akira-expanded";
   text-align: justify;
-  font-size: 2.5rem;
+  font-size: 4vw;
   text-align: left;
   color: #fff;
   text-shadow: 0px 0px 10px #000;
-  margin-bottom: 3%;
+  margin-bottom: 2%;
 }
 
-.article-content p {
+.article-content p1 {
+  font-family: "creato-display-black";
+  text-align: justify;
+  font-size: 0.4 rem;
+  text-align: left;
+  color: #545454;
+}
+
+.article-content p2 {
   font-family: "creato-display";
   text-align: justify;
   font-size: 1rem;
@@ -167,20 +207,6 @@ body, html {
   line-height: 1.6;
 }
 
-/* .article-bottom {
-  grid-column: span 12;
-  grid-row: 2;
-  width: 100%;
-  height:auto;
-}
-
-.article-bottom p {
-  font-family: "creato-display";
-  text-align: justify;
-  font-size: 1.2rem;
-  color: #545454;
-  line-height: 1.6;
-} */
 
 
 .gallery-header {
@@ -218,6 +244,7 @@ body, html {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transform: scale(1);
     transition: box-shadow 0.2s ease, transform 0.2s ease;
+  margin: 5%;
 }
 
 .photo:hover {
@@ -236,7 +263,6 @@ body, html {
   transform: rotate(-90deg);
   color:#545454;
     transition: 0.2s;
-  /* margin-bottom: 2%; */
 }
 
 .photo p:hover {
@@ -304,7 +330,6 @@ li {
   margin: 0 1.5% 2% 1.5%;
 }
 
-/* modal styling */
 .modal {
   display: none;
   position: fixed;
@@ -321,7 +346,7 @@ li {
 .modal-content {
   position: relative;
   max-width: 90%;
-  align-items: center; /* Vertically centers children */
+  align-items: center;
   max-height: 80%;
   overflow-y: hidden;
   background-color: #fff;
@@ -344,13 +369,12 @@ li {
   opacity: 1;
 }
 
-/* expanded gallery styling */
 .expanded-gallery {
   display: flex;
   overflow-x: scroll;
   padding: 5%;
   scroll-behavior: smooth;
-  flex-grow: 1; /* allowed it to take available space */
+  flex-grow: 1;
 }
 
 .expanded-gallery li {
@@ -364,7 +388,6 @@ li {
   border-radius: 5px;
 }
 
-/* hide default scrollbar in expanded gallery */
 .expanded-gallery::-webkit-scrollbar {
   display: none;
 }
@@ -379,7 +402,7 @@ li {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transform: scale(1);
   transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0.2s ease;
-  position: relative; /* Add this for positioning */
+  position: relative; 
 }
 
 .expanded-photo:hover {
@@ -396,7 +419,7 @@ li {
   font-style: normal;
   font-size: 2.7vw;
   max-height: fit-content;
-  transform: translateX(-3.5vw) rotate(-90deg);
+  transform: translateX(-4vw) rotate(-90deg);
   color:#545454;
     transition: 0.2s;
   }

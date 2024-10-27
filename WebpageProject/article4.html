@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Century's Reunion</title>
+    <link rel="stylesheet" href="styles/article.css">
+</head>
+    
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <a href="index.html">
+            <img src="img/undercover-logo.png" alt="Undercover Logo">
+        </a>
+        <nav class="nav">
+            <a href="dance.html">Dance</a>
+            <a href="friends.html">Friends</a>
+        </nav>
+    </header>
+
+    <!-- Main Article Section -->
+    <!-- <section class="article-section"> -->
+    <main class="main-content">
+        <div class="grid-container">
+
+            <div class="polaroid-section">
+                <div class="polaroid1">
+                    <a>
+                        <img src="img/ccb-teaser1.png" alt="Julia sitting on a park bench">
+                        <p>so cool</p>
+                    </a>
+                </div>
+
+                <div class="polaroid2">
+                    <a>
+                        <img src="img/ccb-dance.png" alt="Julia does a dancey dance">
+                        <p>groovay!</p>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="article-content">
+                <h1>SALJA DANCE AUDITIONS</h1>
+                <p1>August 31st, 2024</p1>
+                <p2>
+                    <br><br>Salja Dance has just released their behind photos for their Chk Chk Boom cover!
+                    <br><br>Watch the cover here:
+                    <br><br><iframe width="560" height="315" src="https://www.youtube.com/embed/9qewVbnoMio?si=p72TWGWnhiwkIDlA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <br><br>Check the photos out below!
+                </p2>
+            </div>
+                
+        </div> 
+
+
+    <!-- PHOTO GALLERY -->
+    <header class="gallery-header">
+        <h2>PHOTO GALLERY</h2>
+    </header>
+
+    <section class="gallery-section">
+        
+        <div class="scroll-arrow" id="scroll-left">&#8592;</div>
+
+        <ul id="imgList">
+        
+            <li>
+                <div class="photo">
+                    <img src="img/ccb-grp1.png" alt="Kylie, Elif, Julia, Ivy, Alyssa and Alicia sitting on the NGC stairs">
+                    <p>filming!</p>
+                </div>            
+            </li>
+
+            <li>
+                <div class="photo">
+                    <img src="img/ccb-cu.png" alt="Close-up of Julia dancing the Chk Chk Boom choreography">
+                    <p>hi!!!</p>
+                </div>            
+            </li>
+
+            <li>
+                <div class="photo">
+                    <img src="img/ccb-dance-grp.png" alt="Alyssa, Alicia, Kylie, Tony, Elif, Kim, Julia and Ivy in the ending pose for Chk Chk Boom">
+                    <p>so kewl</p>
+                </div>            
+            </li>
+
+        </ul>
+
+        <div class="scroll-arrow" id="scroll-right">&#8594;</div>
+        
+    </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>Undercover Magazine &copy; 2024. All rights reserved.</p>
+    </footer>
+
+<!-- Modal for Expanded Gallery -->
+<div class="modal" id="galleryModal">
+    <div class="modal-content">
+        <span class="close-button" id="closeModal">&times;</span>
+        
+        <!-- Left hover zone for scrolling -->
+        <div class="hover-scroll left-scroll" id="leftHover"></div>
+
+        <!-- Expanded Gallery View -->
+        <ul class="expanded-gallery" id="expandedGallery">
+            <li>
+                <div class="expanded-photo">
+                    <img src="img/ccb-grp1.png" alt="Kylie, Elif, Julia, Ivy, Alyssa and Alicia sitting on the NGC stairs">
+                    <p>filming!</p>
+                </div>            
+            </li>
+
+            <li>
+                <div class="expanded-photo">
+                    <img src="img/ccb-cu.png" alt="Close-up of Julia dancing the Chk Chk Boom choreography">
+                    <p>hi!!!</p>
+                </div>            
+            </li>
+
+            <li>
+                <div class="expanded-photo">
+                    <img src="img/ccb-dance-grp.png" alt="Alyssa, Alicia, Kylie, Tony, Elif, Kim, Julia and Ivy in the ending pose for Chk Chk Boom">
+                    <p>so kewl</p>
+                </div>            
+            </li>
+
+        </ul>
+        <!-- Right hover zone for scrolling -->
+        <div class="hover-scroll right-scroll" id="rightHover"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

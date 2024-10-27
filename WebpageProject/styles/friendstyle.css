@@ -94,7 +94,6 @@ body {
   display: flex;
   align-items: stretch;
   vertical-align: middle;
-  /* justify-content: space-around; */
   background-color: #D3D3D3;
   padding-bottom: 3vw;
 }
@@ -103,35 +102,34 @@ body {
   display: flex;
   background-color: #fff;
   border-radius: 8px;
-  padding: 2vw; /* Padding for spacing within the card */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a card effect */
-  gap: 5%; /* Space between columns */
+  padding: 2vw;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  gap: 5%;
   width: 80%;
-  margin: 2vw auto; /* Center the card and add space around it */
+  margin: 2vw auto;
 }
 
 .article-left {
-  flex: 1; /* Takes up half the space of the card */
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .article-left img {
-  max-width: 100%; /* Ensures image doesn’t exceed container width */
-  max-height: 100%; /* Ensures image doesn’t exceed container height */
+  max-width: 100%;
+  max-height: 100%;
   width: auto;
   height: auto;
-  /* border-radius: 8px; Adds rounded corners */
-  object-fit: cover; /* Crops the image if it's larger than the container */
+  object-fit: cover;
 }
 
 .article-right {
-  flex: 1; /* Takes up the remaining space */
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1vw; /* Adds some padding for text */
+  padding: 1vw;
 }
 
 .article-right a {
