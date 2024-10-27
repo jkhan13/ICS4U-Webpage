@@ -17,7 +17,7 @@ scrollLeft.addEventListener('click', (event) => {
 
 /*ARTICLESSS*/
 /*photo gallery*/
-if (window.location.pathname.includes('article1.html') || window.location.pathname.includes('article2.html') || window.location.pathname.includes('article3.html')) {
+if (window.location.pathname.includes('article1.html') || window.location.pathname.includes('article2.html') || window.location.pathname.includes('article3.html') || window.location.pathname.includes('article4.html')  || window.location.pathname.includes('article5.html')) {
     const modal = document.getElementById('galleryModal');
     const closeModal = document.getElementById('closeModal');
     const photo = document.querySelectorAll('.photo');
