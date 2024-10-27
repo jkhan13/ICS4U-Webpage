@@ -50,14 +50,26 @@ body {
 }
 
 .header img {
-max-height: 70px;
-max-width: auto;
+  padding-left: 10px;
+  max-height: 70px;
+  max-width: auto;
+    transition: transform 0.2s ease;
 }
 
+.header img:hover {
+  transform: scale(1.03);
+  }
+
 .nav a {
+  font-family: "creato-display";
   color: #fff;
+    transition: color 0.2s ease;
   text-decoration: none;
-  margin-right: 20px;
+  margin-right: 40px;
+}
+
+.nav a:hover {
+  color: #545454;
 }
 
 /*LATEST SECTION*/
@@ -139,7 +151,7 @@ max-width: auto;
 
 
 .footer {
-  /* margin-top: 10%; */
+  font-family: "creato-display";
   padding: 20px;
   text-align: center;
   background-color: #000;
