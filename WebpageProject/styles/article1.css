@@ -40,22 +40,24 @@ body, html {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  top: 0;
+  left: 0;
   width: 100%;
-  padding: 10px;
+  padding-top: 5px;
   background-color: #a3a4a6;
   position: fixed;
   z-index: 10;
 }
 
 .header img {
-  max-height: 70px;
+max-height: 70px;
+max-width: auto;
 }
 
 .nav a {
   color: #fff;
   text-decoration: none;
   margin-right: 20px;
-  font-size: 1.1rem;
 }
 
 .grid-container {
