@@ -8,23 +8,28 @@
 </head>
     
 <body>
-    <!-- Header Section -->
+
+    <!-- HEADER -->
     <header class="header">
         <a href="index.html">
-            <img src="img/undercover-logo.png" alt="Undercover Logo">
+          <img src="img/undercover-logo.png" alt="Undercover Logo">
         </a>
         <nav class="nav">
-            <a href="dance.html">Dance</a>
             <a href="friends.html">Friends</a>
+            <a href="dance.html">Dance</a>
+            <a href="about.html">About</a>
         </nav>
     </header>
 
-    <!-- Main Article Section -->
-    <!-- <section class="article-section"> -->
     <main class="main-content">
+
+        <!-- GRID CONTAINER (to store entire article) -->
         <div class="grid-container">
 
+            <!-- POLAROID SECTION -->
             <div class="polaroid-section">
+                
+                <!-- POLA 1 -->
                 <div class="polaroid1">
                     <a>
                         <img src="img/ccb-teaser1.png" alt="Julia sitting on a park bench">
@@ -32,6 +37,7 @@
                     </a>
                 </div>
 
+                <!-- POLA 2 -->
                 <div class="polaroid2">
                     <a>
                         <img src="img/ccb-dance.png" alt="Julia does a dancey dance">
@@ -40,7 +46,7 @@
                 </div>
             </div>
 
-
+            <!-- ARTICLE TEXT -->
             <div class="article-content">
                 <h1>SALJA DANCE RELEASES CHK CHK BOOM BEHIND PHOTOS</h1>
                 <p1>September 22nd, 2024</p1>
@@ -62,10 +68,13 @@
 
     <section class="gallery-section">
         
+        <!-- LEFT SCROLL ARROW -->
         <div class="scroll-arrow" id="scroll-left">&#8592;</div>
 
+        <!-- UNORDERED LIST FOR GALLERY -->
         <ul id="imgList">
         
+            <!-- PHOTO 1 -->
             <li>
                 <div class="photo">
                     <img src="img/ccb-grp1.png" alt="Kylie, Elif, Julia, Ivy, Alyssa and Alicia sitting on the NGC stairs">
@@ -73,6 +82,7 @@
                 </div>            
             </li>
 
+            <!-- PHOTO 2 -->
             <li>
                 <div class="photo">
                     <img src="img/ccb-cu.png" alt="Close-up of Julia dancing the Chk Chk Boom choreography">
@@ -80,6 +90,7 @@
                 </div>            
             </li>
 
+            <!-- PHOTO 3 -->
             <li>
                 <div class="photo">
                     <img src="img/ccb-dance-grp.png" alt="Alyssa, Alicia, Kylie, Tony, Elif, Kim, Julia and Ivy in the ending pose for Chk Chk Boom">
@@ -89,27 +100,32 @@
 
         </ul>
 
+        <!-- RIGHT SCROLL ARROW -->
         <div class="scroll-arrow" id="scroll-right">&#8594;</div>
         
     </section>
 
     </main>
 
-    <!-- Footer Section -->
-    <footer class="footer">
-        <p>Undercover Magazine &copy; 2024. All rights reserved.</p>
-    </footer>
+<!-- FOOTER -->
+<footer class="footer">
+    <p>Undercover Magazine &copy; 2024. All rights reserved.</p>
+</footer>
 
-<!-- Modal for Expanded Gallery -->
+<!-- MODAL (hidden expanded gallery area) -->
 <div class="modal" id="galleryModal">
     <div class="modal-content">
+
+        <!-- MODAL CLOSE BUTTON -->
         <span class="close-button" id="closeModal">&times;</span>
         
-        <!-- Left hover zone for scrolling -->
+        <!-- LEFT HOVER SCROLL AREA -->
         <div class="hover-scroll left-scroll" id="leftHover"></div>
 
-        <!-- Expanded Gallery View -->
+        <!-- UNORDERED LIST FOR EXPANDED GALLERY -->
         <ul class="expanded-gallery" id="expandedGallery">
+            
+            <!-- EXPANDED PHOTO 1 -->
             <li>
                 <div class="expanded-photo">
                     <img src="img/ccb-grp1.png" alt="Kylie, Elif, Julia, Ivy, Alyssa and Alicia sitting on the NGC stairs">
@@ -117,6 +133,7 @@
                 </div>            
             </li>
 
+            <!-- EXPANDED PHOTO 2 -->
             <li>
                 <div class="expanded-photo">
                     <img src="img/ccb-cu.png" alt="Close-up of Julia dancing the Chk Chk Boom choreography">
@@ -124,6 +141,7 @@
                 </div>            
             </li>
 
+            <!-- EXPANDED PHOTO 3 -->
             <li>
                 <div class="expanded-photo">
                     <img src="img/ccb-dance-grp.png" alt="Alyssa, Alicia, Kylie, Tony, Elif, Kim, Julia and Ivy in the ending pose for Chk Chk Boom">
@@ -132,11 +150,13 @@
             </li>
 
         </ul>
-        <!-- Right hover zone for scrolling -->
+
+        <!-- RIGHT HOVER SCROLL AREA -->
         <div class="hover-scroll right-scroll" id="rightHover"></div>
     </div>
 </div>
 
+<!-- JAVASCRIPT LINK -->
 <script src="script.js"></script>
 
 </body>

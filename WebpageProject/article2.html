@@ -9,26 +9,35 @@
     
 <body>
 
+    <!-- HEADER -->
     <header class="header">
         <a href="index.html">
-            <img src="img/undercover-logo.png" alt="Undercover Logo">
+          <img src="img/undercover-logo.png" alt="Undercover Logo">
         </a>
         <nav class="nav">
-            <a href="dance.html">Dance</a>
             <a href="friends.html">Friends</a>
+            <a href="dance.html">Dance</a>
+            <a href="about.html">About</a>
         </nav>
     </header>
 
     <main class="main-content">
+
+        <!-- GRID CONTAINER (to store entire article) -->
         <div class="grid-container">
 
+            <!-- POLAROID SECTION -->
             <div class="polaroid-section">
+
+                <!-- POLA 1 -->
                 <div class="polaroid1">
                     <a>
                         <img src="img/kelly-con-fit.png" alt="Julia's fit">
                         <p>my fit!</p>
                     </a>
                 </div>
+
+                <!-- POLA 2 -->
                 <div class="polaroid2">
                     <a>
                         <img src="img/kelly-con-dance.png" alt="Kelly does a dancey dance">
@@ -37,6 +46,7 @@
                 </div>
             </div>
 
+            <!-- ARTICLE TEXT -->
             <div class="article-content">
                 <h1>KELLY SONG: IN CONCERT</h1>
                 <p1>September 21st, 2024</p1>
@@ -62,11 +72,14 @@
     </header>
 
     <section class="gallery-section">
-        
+
+        <!-- LEFT SCROLL ARROW -->
         <div class="scroll-arrow" id="scroll-left">&#8592;</div>
 
+        <!-- UNORDERED LIST FOR GALLERY -->
         <ul id="imgList">
         
+            <!-- PHOTO 1 -->
             <li>
                 <div class="photo">
                     <img src="img/kelly-con-4.png" alt="Julia, Hayley, Emily and Lily pose for a picture in the Carleton bathroom">
@@ -74,40 +87,50 @@
                 </div>            
             </li>
 
-        <li>
-            <div class="photo">
-                <img src="img/lily-sit.png" alt="Lily sitting funny">
-                <p>lily!</p>
-            </div>            
-        </li>
+            <!-- PHOTO 2 -->
+            <li>
+                <div class="photo">
+                    <img src="img/lily-sit.png" alt="Lily sitting funny">
+                    <p>lily!</p>
+                </div>            
+            </li>
 
-        <li>
-            <div class="photo">
-                <img src="img/kelly-con-trio.png" alt="Julia, Hayley and Emily pose for a picture in the Carleton bathroom">
-                <p>pretty!!</p>
-            </div>            
-        </li>
+            <!-- PHOTO 3 -->
+            <li>
+                <div class="photo">
+                    <img src="img/kelly-con-trio.png" alt="Julia, Hayley and Emily pose for a picture in the Carleton bathroom">
+                    <p>pretty!!</p>
+                </div>            
+            </li>
 
         </ul>
 
+        <!-- RIGHT SCROLL ARROW -->
         <div class="scroll-arrow" id="scroll-right">&#8594;</div>
         
     </section>
 
     </main>
 
-    <footer class="footer">
-        <p>Undercover Magazine &copy; 2024. All rights reserved.</p>
-    </footer>
+<!-- FOOTER -->
+<footer class="footer">
+    <p>Undercover Magazine &copy; 2024. All rights reserved.</p>
+</footer>
 
+<!-- MODAL (hidden expanded gallery area) -->
 <div class="modal" id="galleryModal">
     <div class="modal-content">
+
+        <!-- MODAL CLOSE BUTTON -->
         <span class="close-button" id="closeModal">&times;</span>
         
+        <!-- LEFT HOVER SCROLL AREA -->
         <div class="hover-scroll left-scroll" id="leftHover"></div>
 
+        <!-- UNORDERED LIST FOR EXPANDED GALLERY -->
         <ul class="expanded-gallery" id="expandedGallery">
 
+            <!-- EXPANDED PHOTO 1 -->
             <li>
                 <div class="expanded-photo">
                     <img src="img/kelly-con-4.png" alt="Julia, Hayley, Emily and Lily pose for a picture in the Carleton bathroom">
@@ -115,6 +138,7 @@
                 </div>            
             </li>
 
+            <!-- EXPANDED PHOTO 2 -->
             <li>
                 <div class="expanded-photo">
                     <img src="img/lily-sit.png" alt="Lily sitting funny">
@@ -122,6 +146,7 @@
                 </div>            
             </li>
 
+            <!-- EXPANDED PHOTO 3 -->
             <li>
                 <div class="expanded-photo">
                     <img src="img/kelly-con-trio.png" alt="Julia, Hayley and Emily pose for a picture in the Carleton bathroom">
@@ -130,11 +155,13 @@
             </li>
 
         </ul>
-        
+
+        <!-- RIGHT HOVER SCROLL AREA -->
         <div class="hover-scroll right-scroll" id="rightHover"></div>
     </div>
 </div>
 
+<!-- JAVASCRIPT LINK -->
 <script src="script.js"></script>
 
 </body>

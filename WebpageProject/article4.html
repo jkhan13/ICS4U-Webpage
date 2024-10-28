@@ -8,23 +8,28 @@
 </head>
     
 <body>
-    <!-- Header Section -->
+
+    <!-- HEADER -->
     <header class="header">
         <a href="index.html">
-            <img src="img/undercover-logo.png" alt="Undercover Logo">
+          <img src="img/undercover-logo.png" alt="Undercover Logo">
         </a>
         <nav class="nav">
-            <a href="dance.html">Dance</a>
             <a href="friends.html">Friends</a>
+            <a href="dance.html">Dance</a>
+            <a href="about.html">About</a>
         </nav>
     </header>
 
-    <!-- Main Article Section -->
-    <!-- <section class="article-section"> -->
     <main class="main-content">
+
+        <!-- GRID CONTAINER (to store entire article) -->
         <div class="grid-container">
 
+            <!-- POLAROID SECTION -->
             <div class="polaroid-section">
+
+                <!-- POLA 1 -->
                 <div class="polaroid1">
                     <a>
                         <img src="img/rising-05.jpeg" alt="Margaret, Julia, Niki, Kim and Ayden posing for a 0.5x photo in Montreal">
@@ -32,6 +37,7 @@
                     </a>
                 </div>
 
+                <!-- POLA 2 -->
                 <div class="polaroid2">
                     <a>
                         <img src="img/in-bloom3.jpg" alt="In Bloom group dance photo">
@@ -42,6 +48,7 @@
             </div>
 
 
+            <!-- ARTICLE TEXT -->
             <div class="article-content">
                 <h1>SALJA DANCE ANNOUNCES YEARLY AUDITIONS</h1>
                 <p1>August 31st, 2024</p1>
@@ -66,10 +73,13 @@
 
     <section class="gallery-section">
         
+        <!-- LEFT SCROLL ARROW -->
         <div class="scroll-arrow" id="scroll-left">&#8592;</div>
 
+        <!-- UNORDERED LIST FOR GALLERY -->
         <ul id="imgList">
         
+            <!-- PHOTO 1 -->
             <li>
                 <div class="photo">
                     <img src="img/in-bloom1.jpg" alt="In Bloom group dance photo">
@@ -77,6 +87,7 @@
                 </div>            
             </li>
 
+            <!-- PHOTO 2 -->
             <li>
                 <div class="photo">
                     <img src="img/new-dance.JPG" alt="Kaka, Niah, Ruo, Ai, Ayden, Kim and Emma smiling, surrounded by bubbles and greenery">
@@ -84,6 +95,7 @@
                 </div>            
             </li>
 
+            <!-- PHOTO 3 -->
             <li>
                 <div class="photo">
                     <img src="img/untouchable.JPG" alt="Ivy, Camille, Ayden, Julia and Kaka leaning against a garage door">
@@ -91,6 +103,7 @@
                 </div>            
             </li>
 
+            <!-- PHOTO 4 -->
             <li>
                 <div class="photo">
                     <img src="img/in-bloom2.jpg" alt="Emma, Elif, Julia, Ayden, Niki, Bryan, Kim, Ai and Kaka sitting on the floor, looking up">
@@ -100,27 +113,32 @@
 
         </ul>
 
+        <!-- RIGHT SCROLL ARROW -->
         <div class="scroll-arrow" id="scroll-right">&#8594;</div>
         
     </section>
 
     </main>
 
-    <!-- Footer Section -->
-    <footer class="footer">
-        <p>Undercover Magazine &copy; 2024. All rights reserved.</p>
-    </footer>
+<!-- FOOTER -->
+<footer class="footer">
+    <p>Undercover Magazine &copy; 2024. All rights reserved.</p>
+</footer>
 
-<!-- Modal for Expanded Gallery -->
+<!-- MODAL (hidden expanded gallery area) -->
 <div class="modal" id="galleryModal">
     <div class="modal-content">
+
+        <!-- MODAL CLOSE BUTTON -->
         <span class="close-button" id="closeModal">&times;</span>
         
-        <!-- Left hover zone for scrolling -->
+        <!-- LEFT HOVER SCROLL AREA -->
         <div class="hover-scroll left-scroll" id="leftHover"></div>
 
-        <!-- Expanded Gallery View -->
+        <!-- UNORDERED LIST FOR EXPANDED GALLERY -->
         <ul class="expanded-gallery" id="expandedGallery">
+
+            <!-- EXPANDED PHOTO 1 -->
             <li>
                 <div class="expanded-photo">
                     <img src="img/in-bloom1.jpg" alt="In Bloom group dance photo">
@@ -128,6 +146,7 @@
                 </div>            
             </li>
 
+            <!-- EXPANDED PHOTO 2 -->
             <li>
                 <div class="expanded-photo">
                     <img src="img/new-dance.JPG" alt="Kaka, Niah, Ruo, Ai, Ayden, Kim and Emma smiling, surrounded by bubbles and greenery">
@@ -135,6 +154,7 @@
                 </div>            
             </li>
 
+            <!-- EXPANDED PHOTO 3 -->
             <li>
                 <div class="expanded-photo">
                     <img src="img/untouchable.JPG" alt="Ivy, Camille, Ayden, Julia and Kaka leaning against a garage door">
@@ -142,6 +162,7 @@
                 </div>            
             </li>
 
+            <!-- EXPANDED PHOTO 4 -->
             <li>
                 <div class="expanded-photo">
                     <img src="img/in-bloom2.jpg" alt="Emma, Elif, Julia, Ayden, Niki, Bryan, Kim, Ai and Kaka sitting on the floor, looking up">
@@ -150,11 +171,13 @@
             </li>
 
         </ul>
-        <!-- Right hover zone for scrolling -->
+
+        <!-- RIGHT HOVER SCROLL AREA -->
         <div class="hover-scroll right-scroll" id="rightHover"></div>
     </div>
 </div>
 
+<!-- JAVASCRIPT LINK -->
 <script src="script.js"></script>
 
 </body>

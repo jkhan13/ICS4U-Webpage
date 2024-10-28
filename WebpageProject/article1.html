@@ -8,35 +8,45 @@
 </head>
     
 <body>
-    <!-- Header Section -->
+
+    <!-- HEADER -->
     <header class="header">
         <a href="index.html">
-            <img src="img/undercover-logo.png" alt="Undercover Logo">
+          <img src="img/undercover-logo.png" alt="Undercover Logo">
         </a>
         <nav class="nav">
-            <a href="dance.html">Dance</a>
             <a href="friends.html">Friends</a>
+            <a href="dance.html">Dance</a>
+            <a href="about.html">About</a>
         </nav>
     </header>
 
-    <!-- Main Article Section -->
-    <!-- <section class="article-section"> -->
+
     <main class="main-content">
+
+        <!-- GRID CONTAINER (to store entire article) -->
         <div class="grid-container">
 
+            <!-- POLAROID SECTION -->
             <div class="polaroid-section">
+
+                <!-- POLA 1 -->
                 <div class="polaroid1">
                     <a>
                         <img src="img/dessert.png" alt="Ayden, Niki and Julia's dessert">
                         <p>drinks+dessert!</p>
                     </a>
                 </div>
+
+                <!-- POLA 2 -->
                 <div class="polaroid2">
                     <a>
                         <img src="img/fit-back.png" alt="Julia's outfit from the back">
                         <p>the fit!</p>
                     </a>
                 </div>
+
+                <!-- POLA 3 -->
                 <div class="polaroid3">
                     <a>
                         <img src="img/pad-thai.png" alt="Pad Thai">
@@ -46,7 +56,7 @@
             </div>
 
 
-            <!-- Article Content (span 8) -->
+            <!-- ARTICLE TEXT -->
             <div class="article-content">
                 <h1>AYDEN, NIKI AND JULIA REUNITE AFTER 4 LONG MONTHS</h1>
                 <p1>October 14th, 2024</p1>
@@ -74,10 +84,13 @@
 
     <section class="gallery-section">
         
+        <!-- LEFT SCROLL ARROW -->
         <div class="scroll-arrow" id="scroll-left">&#8592;</div>
 
+        <!-- UNORDERED LIST FOR GALLERY -->
         <ul id="imgList">
         
+            <!-- PHOTO 1 -->
             <li>
                 <div class="photo">
                     <img src="img/ayden-niki-julia.jpeg" alt="Ayden, Niki and Julia posing for a picture at Social Thai cafe">
@@ -85,51 +98,58 @@
                 </div>            
             </li>
 
-        <li>
-            <div class="photo">
-                <img src="img/movie-duo.png" alt="Niki and Julia in 3D glasses">
-                <p>07z!</p>
-            </div>            
-        </li>
+            <!-- PHOTO 2 -->
+            <li>
+                <div class="photo">
+                    <img src="img/movie-duo.png" alt="Niki and Julia in 3D glasses">
+                    <p>07z!</p>
+                </div>            
+            </li>
 
-        <li>
-            <div class="photo">
-                <img src="img/movie-trio.png" alt="Ayden, Niki and Julia in 3D glasses">
-                <p>#cool</p>
-            </div>            
-        </li>
+            <!-- PHOTO 3 -->
+            <li>
+                <div class="photo">
+                    <img src="img/movie-trio.png" alt="Ayden, Niki and Julia in 3D glasses">
+                    <p>#cool</p>
+                </div>            
+            </li>
 
-        <li>
-            <div class="photo">
-                <img src="img/bathroom-duo.png" alt="Niki and Julia taking a mirror selfie in the Lansdowne bathroom">
-                <p>mirror!</p>
-            </div>            
-        </li>
+            <!-- PHOTO 4 -->
+            <li>
+                <div class="photo">
+                    <img src="img/bathroom-duo.png" alt="Niki and Julia taking a mirror selfie in the Lansdowne bathroom">
+                    <p>mirror!</p>
+                </div>            
+            </li>
 
         </ul>
 
+        <!-- RIGHT SCROLL ARROW -->
         <div class="scroll-arrow" id="scroll-right">&#8594;</div>
         
     </section>
 
     </main>
 
-    <!-- Footer Section -->
-    <footer class="footer">
-        <p>Undercover Magazine &copy; 2024. All rights reserved.</p>
-    </footer>
+<!-- FOOTER -->
+<footer class="footer">
+    <p>Undercover Magazine &copy; 2024. All rights reserved.</p>
+</footer>
 
-<!-- Modal for Expanded Gallery -->
+<!-- MODAL (hidden expanded gallery area) -->
 <div class="modal" id="galleryModal">
     <div class="modal-content">
+
+        <!-- MODAL CLOSE BUTTON -->
         <span class="close-button" id="closeModal">&times;</span>
         
-        <!-- Left hover zone for scrolling -->
+        <!-- LEFT HOVER SCROLL AREA -->
         <div class="hover-scroll left-scroll" id="leftHover"></div>
 
-        <!-- Expanded Gallery View -->
+        <!-- UNORDERED LIST FOR EXPANDED GALLERY -->
         <ul class="expanded-gallery" id="expandedGallery">
-            <!-- Repeat the gallery images within the expanded view -->
+
+            <!-- EXPANDED PHOTO 1 -->
             <li>
                 <div class="expanded-photo">
                     <img src="img/ayden-niki-julia.jpeg" alt="Ayden, Niki and Julia posing for a picture at Social Thai cafe">
@@ -137,6 +157,7 @@
                 </div>            
             </li>
 
+            <!-- EXPANDED PHOTO 2 -->
             <li>
                 <div class="expanded-photo">
                     <img src="img/movie-duo.png" alt="Niki and Julia in 3D glasses">
@@ -144,6 +165,7 @@
                 </div>            
             </li>
 
+            <!-- EXPANDED PHOTO 3 -->
             <li>
                 <div class="expanded-photo">
                     <img src="img/movie-trio.png" alt="Ayden, Niki and Julia in 3D glasses">
@@ -151,6 +173,7 @@
                 </div>            
             </li>
 
+            <!-- EXPANDED PHOTO 4 -->
             <li>
                 <div class="expanded-photo">
                     <img src="img/bathroom-duo.png" alt="Niki and Julia taking a mirror selfie in the Lansdowne bathroom">
@@ -159,11 +182,13 @@
             </li>
 
         </ul>
-        <!-- Right hover zone for scrolling -->
+
+        <!-- RIGHT HOVER SCROLL AREA -->
         <div class="hover-scroll right-scroll" id="rightHover"></div>
     </div>
 </div>
 
+<!-- JAVASCRIPT LINK -->
 <script src="script.js"></script>
 
 </body>

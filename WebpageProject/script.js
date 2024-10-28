@@ -6,18 +6,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //when user clicks on the right arrow, ul scrolls 750px to the right
 scrollRight.addEventListener('click', (event) => {
-  imgList.scrollBy(750, 0);
+  imgList.scrollBy(750, 0); //how much you scroll by
 });
 
 //when user clicks on the left arrow, ul scrolls 750px to the left
 scrollLeft.addEventListener('click', (event) => {
-  imgList.scrollBy(-750, 0);
+  imgList.scrollBy(-750, 0); //how much you scroll by
 });
 
 
 /*ARTICLESSS*/
-/*photo gallery*/
-if (window.location.pathname.includes('article1.html') || window.location.pathname.includes('article2.html') || window.location.pathname.includes('article3.html') || window.location.pathname.includes('article4.html')  || window.location.pathname.includes('article5.html')) {
+
+// photo gallery+modal variables
+if (window.location.pathname.includes('article1.html') || window.location.pathname.includes('article2.html') || window.location.pathname.includes('article3.html') || window.location.pathname.includes('article4.html')  || window.location.pathname.includes('article5.html')  || window.location.pathname.includes('about.html')) {
     const modal = document.getElementById('galleryModal');
     const closeModal = document.getElementById('closeModal');
     const photo = document.querySelectorAll('.photo');
@@ -45,8 +46,7 @@ if (window.location.pathname.includes('article1.html') || window.location.pathna
         }
     });
 
-    /*modal hover-scrolling feature*/
-
+//modal hover-scrolling feature
     const startScroll = (direction) => {
         scrollInterval = setInterval(() => {
             gallery.scrollLeft += direction === "left" ? -20 : 20; //scroll speed

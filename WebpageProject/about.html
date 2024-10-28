@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Undercover</title>
+    <link rel="stylesheet" href="styles/article-style.css">
+</head>
+    
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <a href="index.html">
+          <img src="img/undercover-logo.png" alt="Undercover Logo">
+        </a>
+        <nav class="nav">
+            <a href="friends.html">Friends</a>
+            <a href="dance.html">Dance</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+
+    <main class="main-content">
+
+        <!-- GRID CONTAINER (to store entire article) -->
+        <div class="grid-container">
+
+            <!-- POLAROID SECTION -->
+            <div class="polaroid-section">
+
+                <!-- LOGO SECTION -->
+                <div class="logo-section">
+                    <img src="img/undercover-logo.png"alt="Undercover Logo">
+                </div>
+
+                <!-- POLA 1 -->
+                <div class="polaroid1">
+                    <a>
+                        <img src="img/mtl-selfie.png" alt="Niki and Julia pose for a 0.5x photo with Montreal friends">
+                        <p>mtl!</p>
+                    </a>
+                </div>
+
+            </div>
+
+
+            <!-- ABOUT TEXT -->
+            <div class="article-content">
+                <h1>ABOUT UNDERCOVER</h1>
+                <p1>October 27th, 2024</p1>
+                <p2>
+                    <br><br>This website was created with the idea of a magazine, with a sleek design and satisfying hover effects(!!) but for the things that matter to <i>me</i>.
+                    <br><br>I feel like I've been so busy lately, as if school is my only life. Sure, it's, honestly, pretty fulfilling, but only up until a certain point. After that point in time, I almost forget what it's like to hang out with friends outside of school, I forget anything but that stressful <i>go-go-go</i> environment.
+                    <br><br>For me, it's experiences and people, outside of school that really make my life colourful, that fulfill me and help me feel my best. I designed this magazine with that in mind. The idea behind it is that sure, you may see me at school, this random girl with headphones that may as well be glued to her ears, and you'll think that's that. It's cliché, but there's truly so much more. Even to me, it feels like I'm living a whole secret life when I leave that building, full of laughter and a little bit of healthy carelessness.
+                    <br><br>Living those moments, and then returning to school the next day, feels really strange, honestly. 
+                    <br><br>It's almost as if I'm <i>Undercover.</i>
+                </p2>
+                <p1><br><br>Please enjoy!</p1>
+            </div>
+                
+        </div> 
+
+
+    <!-- PHOTO GALLERY -->
+    <header class="gallery-header">
+        <h2>PHOTO GALLERY</h2>
+    </header>
+
+    <section class="gallery-section">
+        
+        <!-- LEFT SCROLL ARROW -->
+        <div class="scroll-arrow" id="scroll-left">&#8592;</div>
+
+        <!-- UNORDERED LIST FOR GALLERY -->
+        <ul id="imgList">
+        
+            <!-- PHOTO 1 -->
+            <li>
+                <div class="photo">
+                    <img src="img/nink-birth-grp.png" alt="Niki's birthday party">
+                    <p>nink!</p>
+                </div>            
+            </li>
+
+            <!-- PHOTO 2 -->
+            <li>
+                <div class="photo">
+                    <img src="img/rpd.png" alt="Kim, Elif, Ayden, Julia and Niki pose for a selfie at Confederation Park">
+                    <p>rpd!</p>
+                </div>            
+            </li>
+
+            <!-- PHOTO 3 -->
+            <li>
+                <div class="photo">
+                    <img src="img/nink-derp.png" alt="Julia and Niki pose for a sunglasses reflection selfie">
+                    <p>0o0</p>
+                </div>            
+            </li>
+
+            <!-- PHOTO 4 -->
+            <li>
+                <div class="photo">
+                    <img src="img/julia(nn).png" alt="Juliann and Julia pose for a sunglasses selfie">
+                    <p>moggg</p>
+                </div>            
+            </li>
+
+            <!-- PHOTO 5 -->
+            <li>
+                <div class="photo">
+                    <img src="img/salja-aud-grp.png" alt="Salja poses for a silly selfie at auditions">
+                    <p>auds!</p>
+                </div>            
+            </li>
+
+            <!-- PHOTO 6 -->
+            <li>
+                <div class="photo">
+                    <img src="img/emma.png" alt="Julia and Emma pose for a photo in a shopping cart">
+                    <p>emma!</p>
+                </div>            
+            </li>
+
+            <!-- PHOTO 7 -->
+            <li>
+                <div class="photo">
+                    <img src="img/fuego-mtl.png" alt="Kim, Ayden, Bryan, Niki, Julia, Anaiya and Alicia pose for a selfie in Montreal">
+                    <p>fuego</p>
+                </div>            
+            </li>
+
+            <!-- PHOTO 8 -->
+            <li>
+                <div class="photo">
+                    <img src="img/may-anf-grp.png" alt="Trista, Margaret, Alicia, Julia and Niki pose for a selfie at Tanger Asian Night Market">
+                    <p>easy!!</p>
+                </div>            
+            </li>
+
+            <!-- PHOTO 9 -->
+            <li>
+                <div class="photo">
+                    <img src="img/milk-up.png" alt="Bernice, Niki and Julia pose for a selfie at Milk Up Cownty Fair">
+                    <p>milkup</p>
+                </div>            
+            </li>
+
+
+        </ul>
+
+        <!-- RIGHT SCROLL ARROW -->
+        <div class="scroll-arrow" id="scroll-right">&#8594;</div>
+        
+    </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>Undercover Magazine &copy; 2024. All rights reserved.</p>
+</footer>
+
+<!-- MODAL (hidden expanded gallery area) -->
+<div class="modal" id="galleryModal">
+    <div class="modal-content">
+
+        <!-- MODAL CLOSE BUTTON -->
+        <span class="close-button" id="closeModal">&times;</span>
+        
+        <!-- LEFT HOVER SCROLL AREA -->
+        <div class="hover-scroll left-scroll" id="leftHover"></div>
+
+        <!-- UNORDERED LIST FOR EXPANDED GALLERY -->
+        <ul class="expanded-gallery" id="expandedGallery">
+            
+            <!-- EXPANDED PHOTO 1 -->
+            <li>
+                <div class="expanded-photo">
+                    <img src="img/nink-birth-grp.png" alt="Niki's birthday party">
+                    <p>nink!</p>
+                </div>            
+            </li>
+
+            <!-- EXPANDED PHOTO 2 -->
+            <li>
+                <div class="expanded-photo">
+                    <img src="img/rpd.png" alt="Kim, Elif, Ayden, Julia and Niki pose for a selfie at Confederation Park">
+                    <p>rpd!</p>
+                </div>            
+            </li>
+
+            <!-- EXPANDED PHOTO 3 -->
+            <li>
+                <div class="expanded-photo">
+                    <img src="img/nink-derp.png" alt="Julia and Niki pose for a sunglasses reflection selfie">
+                    <p>0o0</p>
+                </div>            
+            </li>
+
+            <!-- EXPANDED PHOTO 4 -->
+            <li>
+                <div class="expanded-photo">
+                    <img src="img/julia(nn).png" alt="Juliann and Julia pose for a sunglasses selfie">
+                    <p>moggg</p>
+                </div>            
+            </li>
+
+            <!-- EXPANDED PHOTO 5 -->
+            <li>
+                <div class="expanded-photo">
+                    <img src="img/salja-aud-grp.png" alt="Salja poses for a silly selfie at auditions">
+                    <p>auds!</p>
+                </div>            
+            </li>
+            
+            <!-- EXPANDED PHOTO 6 -->
+            <li>
+                <div class="expanded-photo">
+                    <img src="img/emma.png" alt="Julia and Emma pose for a photo in a shopping cart">
+                    <p>emma!</p>
+                </div>            
+            </li>   
+            
+            <!-- EXPANDED PHOTO 7 -->
+            <li>
+                <div class="expanded-photo">
+                    <img src="img/fuego-mtl.png" alt="Kim, Ayden, Bryan, Niki, Julia, Anaiya and Alicia pose for a selfie in Montreal">
+                    <p>fuego</p>
+                </div>            
+            </li>  
+            
+            <!-- EXPANDED PHOTO 8 -->
+            <li>
+                <div class="expanded-photo">
+                    <img src="img/may-anf-grp.png" alt="Trista, Margaret, Alicia, Julia and Niki pose for a selfie at Tanger Asian Night Market">
+                    <p>easy!!</p>
+                </div>            
+            </li>  
+
+            <!-- EXPANDED PHOTO 9 -->
+            <li>
+                <div class="expanded-photo">
+                    <img src="img/milk-up.png" alt="Bernice, Niki and Julia pose for a selfie at Milk Up Cownty Fair">
+                    <p>milkup</p>
+                </div>            
+            </li>  
+
+        </ul>
+
+        <!-- RIGHT HOVER SCROLL AREA -->
+        <div class="hover-scroll right-scroll" id="rightHover"></div>
+    
+    </div>
+</div>
+
+<!-- JAVASCRIPT LINK -->
+<script src="script.js"></script>
+
+</body>
+</html>
